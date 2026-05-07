@@ -53,3 +53,13 @@ One piece of advice that I accepted from AI was separating CPU-bound and IO-task
 An earlier suggestion attempted to clone Rust "Receiver" objects from channels so multiple workers could consume tasks directly. This caused compilation errors because standard Rust "Receiver" types are not cloneable. The design was corrected by replacing shared receivers with Arc<Mutex<VecDeque<Task>>> queues protected by synchronization primitives.
 
 ---
+
+## How to Run
+
+All thats needed to run the program is the command below on the final_project directory:
+
+```
+cargo run
+```
+
+---
